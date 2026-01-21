@@ -137,7 +137,7 @@
     background:
         url("../Images/spotify.png") no-repeat 20px center,
         linear-gradient(#9100f8, #fb09b4, #f7e93f);
-        padding-left: 20px;
+    padding-left: 20px;
     border: none;
     border-radius: 10000px;
     color: #ffffff;
@@ -154,70 +154,128 @@
     font-size: 16px;
     font-weight: 600;
 }
-.about-section{
-    height: 440px ;
+.about-section {
+    height: 440px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     text-align: center;
     background-color: #1a0b2e;
     /* padding-top: 101px; */
-   
 }
-.about-content{
+.about-content {
     width: 1200px;
-    height: 148px ;
+    height: 148px;
 }
-.about-section h2{
+.about-section h2 {
     padding-top: 101px;
-    font-size: 48px ;
+    font-size: 48px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-.about-section .first-about{
-    font-size: 16px ;
+.about-section .first-about {
+    font-size: 16px;
     font-weight: 400;
-    color: #FFFFFF;
-    padding-top: 16px ;
+    color: #ffffff;
+    padding-top: 16px;
 }
-.about-section .second-about{
-    padding-bottom: 8px ;
+.about-section .second-about {
+    padding-bottom: 8px;
 }
-.card-section{
+.card-section {
     /* width: 1200px ; */
-    height: 95px ;
+    height: 95px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-   padding-top: 80px;
-   padding-bottom: 80px;
-   gap:80px ;
-   background-color: #1a0b2e;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 80px;
+    background-color: #1a0b2e;
 }
-.card h1{
-    font-size:48px ;
+.card h1 {
+    font-size: 48px;
     font-weight: 900;
     color: #00ff88;
-   letter-spacing: 3px;
+    letter-spacing: 3px;
 }
-.card h5{
-    font-size:16px ;
+.card h5 {
+    font-size: 16px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-top: 16px;
 }
+.flex-box {
+    height: 1122px;
+    padding: 120px 200px;
+    display: grid;
+    justify-content: center;
+    background-color: #230e3d;
+}
+.box-card {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 225px);
+    gap: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.flex-box .box-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.box-1 {
+    grid-row: span 2;
+    width: 380px;
+    height: 480px;
+    background-color: #351165;
+    border-radius: 40px;
+}
+.box-2 {
+    grid-column: span 2;
+    background-color: #351165;
+    border-radius: 40px;
+}
+.box-4 {
+    height: 275px;
+    grid-column: span 2;
+}
+.box-5 {
+    height: 275px;
+    background-color: #351165;
+    border-radius: 40px;
+}
+.box-1 img {
+    height: 60px;
+    width: 60px;
+    padding-top: 108px;
+    padding-left: 40px;
+}
+.primary-class {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-top: 16px;
+    padding-left: 40px;
+}
+.primary-class-2 {
+    width: 60px;
+    height: 60px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.primary-class-3 {
+    padding-top: 16px;
+    padding-left: 40px;
+    font-size: 16px;
+    color: #ffffff;
+}
 
 @media screen and (max-width: 576px) {
     body {
