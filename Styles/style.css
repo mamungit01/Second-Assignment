@@ -276,6 +276,132 @@
     font-size: 16px;
     color: #ffffff;
 }
+iframe{
+    border-radius:40px 40px 0 0 ;
+}
+
+.featured-episodes{
+    padding: 120px 200px 0 200px;
+    background-color: #1A0B2E;
+}
+.future{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 48px ;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px ;
+    gap: 30px ;
+    
+}
+.music-card{
+    width: 380px;
+    height: 440px ;
+    background-color:#250D44 ;
+    border-radius: 40px ;
+}
+.music-card h3{
+   font-size: 24px ; 
+   font-weight: 600;
+   text-align: start;
+    padding-top: 24px;
+    padding-left: 24px ;
+    color: #FFFFFF;
+}
+.music-card p{
+    font-size:16px  ;
+    text-align: start;
+    padding-top: 12px ;
+    padding-left: 24px;
+    color: #FFFFFF;
+}
+.music input{
+    font-size: 16px ;
+    font-weight: 500;
+    color: #00ff88;
+   background: none;
+   border: none;
+   padding-top: 12px ;
+    padding-right: 250px;
+    background: url("../Images/clock.png") no-repeat ;
+    /* background-size: cover; */
+    background-position:5px bottom ;
+    padding-left: 35px ;
+    position: relative;
+    
+}
+
+.meet-section{
+    padding: 120px 200px 0 200px ;
+    background-color:#1A0B2E ;
+}
+.meet-head{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom:40px  ;
+    font-size: 48px ;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.meet-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* padding-top: 40px ; */
+    gap: 24px ;
+    background-color:#351165 ;
+    border-radius: 40px ;
+}
+.host img{
+    width: 200px ;
+    height: 200px ;
+    padding: 40px 24px  40px 40px ;
+}
+.host-about h3{
+    font-size: 32px ;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.host-about p{
+    font-size:16px  ;
+    color: #FFFFFF;
+    line-height: 30px ;
+}
+.host-icons{
+    width: 184px ;
+    height: 40px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px ;
+    padding-top: 16px ;
+    padding-bottom: 49px ;
+    
+}
+.img{
+    border: 2px solid #532C72 ;
+    border-radius: 100%;
+    
+    
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 576px) {
     body {
