@@ -40,7 +40,7 @@
 .nav-btn {
     width: 135px;
     height: 44px;
-    background: linear-gradient(#9100f8, #fb09b4, #f7e93f);
+    background: linear-gradient(90deg, #9100f8, #fb09b4, #f7e93f);
     border-radius: 8px;
     justify-content: center;
     display: flex;
@@ -113,6 +113,19 @@
     color: #ffffff;
     padding-top: 40px;
     padding-bottom: 8px;
+    background: linear-gradient(-90deg, #9100f8, #fb09b4, #f7e93f);
+    background-size: 150px;
+    background-clip: text;
+    color: transparent;
+    animation: move 7s linear infinite;
+}
+@keyframes move {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 300%;
+    }
 }
 .content h5 {
     font-size: 16px;
@@ -136,7 +149,7 @@
     /* background: linear-gradient(#9100f8, #fb09b4, #f7e93f); */
     background:
         url("../Images/spotify.png") no-repeat 20px center,
-        linear-gradient(#9100f8, #fb09b4, #f7e93f);
+        linear-gradient(90deg, #9100f8, #fb09b4, #f7e93f);
     padding-left: 20px;
     border: none;
     border-radius: 10000px;
@@ -276,132 +289,186 @@
     font-size: 16px;
     color: #ffffff;
 }
-iframe{
-    border-radius:40px 40px 0 0 ;
+iframe {
+    border-radius: 40px 40px 0 0;
 }
 
-.featured-episodes{
+.featured-episodes {
     padding: 120px 200px 0 200px;
-    background-color: #1A0B2E;
+    background-color: #1a0b2e;
 }
-.future{
+.future {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 48px ;
+    font-size: 48px;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-.music{
+.music {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 40px ;
-    gap: 30px ;
-    
+    padding-top: 40px;
+    gap: 30px;
 }
-.music-card{
+.music-card {
     width: 380px;
-    height: 440px ;
-    background-color:#250D44 ;
-    border-radius: 40px ;
+    height: 440px;
+    background-color: #250d44;
+    border-radius: 40px;
 }
-.music-card h3{
-   font-size: 24px ; 
-   font-weight: 600;
-   text-align: start;
-    padding-top: 24px;
-    padding-left: 24px ;
-    color: #FFFFFF;
-}
-.music-card p{
-    font-size:16px  ;
+.music-card h3 {
+    font-size: 24px;
+    font-weight: 600;
     text-align: start;
-    padding-top: 12px ;
+    padding-top: 24px;
     padding-left: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-.music input{
-    font-size: 16px ;
+.music-card p {
+    font-size: 16px;
+    text-align: start;
+    padding-top: 12px;
+    padding-left: 24px;
+    color: #ffffff;
+}
+.music input {
+    font-size: 16px;
     font-weight: 500;
     color: #00ff88;
-   background: none;
-   border: none;
-   padding-top: 12px ;
+    background: none;
+    border: none;
+    padding-top: 12px;
     padding-right: 250px;
-    background: url("../Images/clock.png") no-repeat ;
+    background: url("../Images/clock.png") no-repeat;
     /* background-size: cover; */
-    background-position:5px bottom ;
-    padding-left: 35px ;
+    background-position: 5px bottom;
+    padding-left: 35px;
     position: relative;
-    
 }
 
-.meet-section{
-    padding: 120px 200px 0 200px ;
-    background-color:#1A0B2E ;
+.meet-section {
+    padding: 120px 200px 120px 200px;
+    background-color: #1a0b2e;
 }
-.meet-head{
+.meet-head {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-bottom:40px  ;
-    font-size: 48px ;
+    padding-bottom: 40px;
+    font-size: 48px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-.meet-content{
+.meet-content {
     display: flex;
     justify-content: center;
     align-items: center;
     /* text-align: center; */
     /* padding-top: 40px ; */
-    gap: 24px ;
-    background-color:#351165 ;
-    border-radius: 40px ;
+    gap: 24px;
+    background-color: #351165;
+    border-radius: 40px;
 }
-.host img{
-    width: 200px ;
-    height: 200px ;
-    padding: 40px 24px  40px 40px ;
+.host img {
+    width: 200px;
+    height: 200px;
+    padding: 40px 24px 40px 40px;
 }
-.host-about h3{
-    font-size: 32px ;
+.host-about h3 {
+    font-size: 32px;
     font-weight: 700;
-    color: #FFFFFF;
-    padding-bottom: 20px;
+    color: #ffffff;
+    padding-top: 48.5px;
 }
-.host-about p{
-    font-size:16px  ;
-    color: #FFFFFF;
-    line-height: 30px ;
+.host-about p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 30px;
+    padding-top: 16px;
 }
-.host-icons{
-    width: 184px ;
-    height: 40px ;
+.host-icons {
+    width: 184px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px ;
-    padding-top: 16px ;
-    padding-bottom: 49px ;
-    
+    gap: 20px;
+    padding-top: 16px;
+    padding-bottom: 49px;
 }
-.img{
-    border: 2px solid #532C72 ;
+.img {
+    border: 2px solid #532c72;
     border-radius: 100%;
-    
-    
 }
 
+.footer-bg {
+    background-image: url("../Images/footer-bg.png");
+    background-repeat: no-repeat;
+    height: 412px;
+    width: 100%;
+}
 
-
-
-
-
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-head {
+    font-size: 26px;
+    font-weight: 600;
+    padding-top: 120px;
+}
+.footer-input {
+    padding-top: 30px;
+    padding-left: 80px;
+    width: 544px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    /* background: none; */
+}
+.cr-button {
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: #ffffff;
+    /* background-color: #00ff88; */
+}
+.btn-1 {
+    background: url("../Images/spotify.png") no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+.btn-2 {
+    background: url("../Images/apple-podcast.png") no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+.btn-3 {
+    background: url("../Images/youtube-podcast.png") no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+.btn-4 {
+    background: url("../Images/twitter.png") no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+.copy-right {
+    padding-top: 32px;
+    padding-left: 80px;
+    font-size: 16px;
+    color: #ffffff;
+}
 
 @media screen and (max-width: 576px) {
     body {
